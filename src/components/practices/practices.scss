@@ -1,0 +1,87 @@
+.practices {
+    padding-bottom: 180px;
+    .practices__block {
+        .block__title {
+            text-align: center;
+            margin-bottom: 65px;
+        }
+        .cases {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .case__item {
+                height: 340px;
+                width: 30%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 14px;
+                margin-bottom: 30px;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                transition: 0.3s ease-out;
+                background-position: center;
+                h3 {
+                    margin-bottom: 32px;
+                    position: relative;
+                    &:after {
+                        display: block;
+                        position: absolute;
+                        left: 0;
+                        width: 0;
+                        height: 1px;
+                        background-color: #fff;
+                        content: "";
+                        transition: width 0.3s ease-out;
+                    }
+                }
+                &:hover {
+                    background-color: #fff;
+                    h3 {
+                        &:after{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .wide {
+                width: 68%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1024px){
+    .practices {
+        .practices__block {
+            .cases {
+                .case__item {
+                    width: 35%;
+                }
+                .wide {
+                    width: 63%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .practices {
+        padding-bottom: 100px;
+        .practices__block {
+            .cases {
+                .case__item {
+                    width: 100%;
+                }
+                .wide {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 540px){
+    .practices {
+        padding-bottom: 70px;
+    }
+}

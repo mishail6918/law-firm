@@ -1,0 +1,108 @@
+.reviews {
+    padding-bottom: 188px;
+    .reviews__block {
+        .block__title {
+            margin-bottom: 105px;
+            width: 40%;
+        }
+        .reviews__slider {
+            .slider__item {
+                border-radius: 14px;
+                border: 1.4px solid rgba(255, 255, 255, 0.10);
+                padding: 36px 26px;
+                margin: 0 15px;
+                position: relative;
+                .slider__image {
+                    margin-bottom: 20px;
+                }
+                .slider__name {
+                    margin-bottom: 10px;
+                }
+                .slider__position {
+                    margin-bottom: 22px;
+                }
+                .mark {
+                    position: absolute;
+                    right: 40px;
+                    top: 28px;
+                }
+            }
+            .slick-center {
+                background: #2E2E2E;
+            }
+            .slick-arrow {
+                position: absolute;
+                right: 0;
+                top: -190px;
+                background-repeat: no-repeat;
+                background-size: auto;
+                background-position: center;
+                width: 90px;
+                height: 90px;
+                font-size: 0;
+                cursor: pointer;
+                border-radius: 50px;
+                background-color: #E3B748;
+                transition: 0.3s;
+                z-index: 15;
+                &:hover {
+                    background-color: #fff;
+                }
+            }
+            .slick-next {
+                background-image: url("/images/right-arrow.png");
+            }
+            .slick-prev {
+                background-image: url("/images/right-arrow.png");
+                transform: rotate(180deg);
+                right: 108px;
+            }
+            .slick-disabled {
+                background-color: #fff;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .reviews {
+        padding-bottom: 100px;
+    }
+}
+@media screen and (max-width: 540px){
+    .reviews {
+        padding-bottom: 70px;
+        .reviews__block {
+            .block__title {
+                margin-bottom: 50px;
+                width: 100%;
+            }
+            .reviews__slider {
+                .slider__item {
+                    .mark {
+                        display: none;
+                    }
+                }
+                .slick-arrow {
+                    top: 15px;
+                    right: 25px;
+                    width: 55px;
+                    height: 55px;
+                }
+                .slick-prev {
+                    right: 110px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 320px){
+    .reviews {
+        .reviews__block {
+            .reviews__slider {
+                .slick-prev {
+                    right: 80px;
+                }
+            }
+        }
+    }
+}

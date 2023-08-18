@@ -1,0 +1,28 @@
+{
+  "name": "law-firm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "del": "^7.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-include": "^2.4.1",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.65.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^2.0.0"
+  }
+}
